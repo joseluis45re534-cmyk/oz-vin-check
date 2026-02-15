@@ -29,6 +29,24 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Deployment
+
+### Cloudflare Pages
+This project is configured for Cloudflare Pages using `@cloudflare/next-on-pages`.
+
+1.  **Push to GitHub**.
+2.  **Connect to Cloudflare Pages**:
+    -   Framework Preset: Next.js (Static/Edge)
+    -   Build Command: `npx @cloudflare/next-on-pages@1`
+    -   Output Directory: `.vercel/output/static`
+    -   Compatibility Flags: `nodejs_compat`
+3.  **Environment Variables**:
+    -   `STRIPE_SECRET_KEY`
+    -   `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY`
+    -   `STRIPE_WEBHOOK_SECRET`
+4.  **D1 Database Binding**:
+    -   Bind your D1 database to the variable name `DB`.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
