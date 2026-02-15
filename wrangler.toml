@@ -1,9 +1,0 @@
-#:schema node_modules/wrangler/config-schema.json
-name = "oz-vin-check"
-compatibility_date = "2024-05-12"
-compatibility_flags = ["nodejs_compat"]
-
-[[d1_databases]]
-binding = "DB"
-database_name = "oz-vin-check-db"
-database_id = "03ee7b29-1099-4628-8349-8bae0529641b" # User will need to fill this
